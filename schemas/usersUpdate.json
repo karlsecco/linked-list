@@ -1,0 +1,40 @@
+{
+  "$id": "http://linkedlist.com/example.json",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "$id": "/properties/firstName",
+      "type": "string",
+      "title": "The Firstname Schema ",
+      "examples": ["Jane"],
+      "minLength": 1,
+      "maxLength": 55
+    },
+    "lastName": {
+      "$id": "/properties/lastName",
+      "type": "string",
+      "title": "The Lastname Schema ",
+      "examples": ["Doe"],
+      "minLength": 1,
+      "maxLength": 55
+    },
+    "username": {
+      "$id": "/properties/username",
+      "type": "string",
+      "title": "The Username Schema ",
+      "examples": ["linkedlistUser"],
+      "minLength": 1,
+      "maxLength": 55
+    },
+    "email": {
+      "$id": "/properties/email",
+      "type": "string",
+      "format": "email",
+      "title": "The Email Schema ",
+      "examples": ["jane.doe@example.com"],
+      "minLength": 1,
+      "maxLength": 55
+    }
+  },
+  "required": ["firstName", "lastName", "username", "email"]
+}
